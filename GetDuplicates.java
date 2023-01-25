@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class GetDuplicates {
 
@@ -21,6 +22,7 @@ public class GetDuplicates {
 
     public static ArrayList<Integer> solution(int[] input) {
 
+        Arrays.sort(input);
         ArrayList<Integer> result = new ArrayList<>();
 
         for(int i = 0; i < input.length -1; i++){
