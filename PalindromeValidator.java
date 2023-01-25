@@ -19,13 +19,13 @@ public class PalindromeValidator {
 */
 
 
-    public static String solution(String input) {
+    public static String solution(int input) {
 
         StringBuilder stringBuilder = new StringBuilder(input);
-        return String.valueOf(input.equals(stringBuilder.reverse().toString()));
+        return String.valueOf(String.valueOf(input).equals(stringBuilder.reverse().toString()));
     }
 
     public static void main(String[] args){
-        System.out.print(solution("101"));
+        System.out.print(solution(101));
     }
 }

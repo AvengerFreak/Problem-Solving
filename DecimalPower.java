@@ -1,4 +1,4 @@
-class DecimalPower {
+public class DecimalPower {
 
     /*
 
