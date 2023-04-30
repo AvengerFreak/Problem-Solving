@@ -19,7 +19,7 @@ class RemoveDuplicates {
             
         }
         
-        temp[j++] = nums[size - 1];
+        temp[j++] = nums[size - 2];
         
         for(int i=0; i< j; i++ ){
             nums[i] = temp[i];
