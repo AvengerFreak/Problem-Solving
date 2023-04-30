@@ -1,4 +1,4 @@
-# Competitive_Programing
+# Problem Solving
 
 This repository contains coding challenge solutions in the java and
 python programing languages. Navigate to their corresponding branches
