@@ -3,7 +3,7 @@
 class RemoveDuplicates {
     public int removeDuplicates(int[] nums) {
         
-       int n = arr.length;
+       int n = nums.length;
        // Return, if array is empty or
         // contains a single element
         if (n == 0 || n == 1)
