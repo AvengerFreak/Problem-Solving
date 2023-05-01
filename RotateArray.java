@@ -1,5 +1,7 @@
 // solution to leetcode problem https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/646/
 
+class RotateArray {
+        
 public void rotate(int[] nums, int k) {
         
      int n = nums.length;
@@ -15,3 +17,4 @@ public void rotate(int[] nums, int k) {
          nums[i]=copy[i];
      }
     }
+}
