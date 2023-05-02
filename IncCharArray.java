@@ -16,10 +16,44 @@ public class IncCharArray {
     Explanation - the integer represented is 9, the increased integer is 10
 */
     
-    public static int[] solution(int[] input) {
+    public static int[] solution(int[] digits) {
 
-        input[input.length-1]+=1;
-        return input;
+        int index = digits.length-1;
+        
+        if(index == 0){ // array of len 1
+            if(digits[0] == 9)
+                return new int[]{1,0};
+            
+            else{
+               digits[0]+=1;
+                return digits;
+            }
+               
+        }
+        
+        int digit = digits[index];
+        
+        while(digit == 9 && index > 0){
+            digits[index]=0;
+            digit = digits[--index];
+        }
+        
+        if(digits[index] == 9 && index == 0){ // traversed all the way to the first digit
+            
+            int N = digits.length;
+            int incNine[] = new int[N+1];
+            incNine[0]=1;
+            
+            for(int i = 1; i < N ; i++){
+                incNine[i]= 0;
+            }
+            
+            return incNine;
+        }
+        
+        digits[index]+=1;
+        return digits;
+        
     }
 
     public static void main(String[] args){
